@@ -1,0 +1,654 @@
+/* Importation */
+@import url(../../../exo-final-Freshly-Restaurant/instructions/css/font_faces.css);
+
+/* **************************************RESET*********************************** */
+:root {
+    --clr-primary: #4c4343;
+    --clr-secondary: #ebe3db;
+    --clr-third: #950000;
+    --clr-fourth: #444444;
+    --clr-fifth: #fff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.wrapper,
+footer section {
+    max-width: 1440px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main P {
+    text-align: center;
+}
+
+body p {
+    font-family: "Athiti";
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    padding: .4rem .8rem;
+}
+
+/********************************HEADER***************************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+header>div a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header a {
+    align-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+header span::before,
+header span::after {
+    font-family: "font awesome 5 free";
+    content: "\f005";
+    color: var(--clr-third);
+    font-weight: bold;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-family: "Athiti";
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.header img {
+    width: 6rem;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.header nav a {
+    font-family: "Athiti";
+    font-size: 1.125rem;
+    font-weight: bold;
+    background-color: var(--clr-secondary);
+    transition: all 2s;
+}
+
+.header nav a.active:visited,
+.header nav a.active:focus {
+    background-color: var(--clr-primary);
+    color: #fff;
+}
+
+.header nav a:hover {
+    background-color: var(--clr-third);
+    color: #fff;
+}
+
+.header nav li {
+    list-style-type: none;
+}
+
+/* *********************************MAIN***************************** */
+/* **********************************HOME MENU**************************** */
+/* *******************PARAMETRAGE DES TITRES ******************/
+h1::before,
+h2::before,
+main h3::before,
+h1::after,
+h2::after,
+main h3::after,
+h4::after,
+h4::before {
+    font-family: "font awesome 5 free";
+    content: "\f005";
+    color: var(--clr-third);
+    font-size: 0.6rem;
+    padding-inline: 0.5rem;
+}
+
+/* **************************Mettre du gap entre les éléments **********************/
+.slick-slide {
+    margin-right: 0.5rem;
+}
+
+/*************************** paramètres slick *************************/
+.parente {
+    display: flex;
+    background-color: lightsalmon;
+    padding: 3rem;
+    position: relative;
+}
+
+.slick-prev {
+    left: 1.5rem;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 1.5rem;
+}
+
+.slick-dots li button::before {
+    font-size: 1rem;
+}
+
+.slick-dots li.slick-active button::before {
+    color: var(--clr-third);
+}
+
+
+/*************PARAMETRAGE DES a DU MAIN********************/
+main article:nth-of-type(2) div a {
+    background-color: var(--clr-primary);
+}
+
+.float p {
+    text-align: justify;
+}
+
+/***********************ARTICLE*************************/
+main h2,
+main h3,
+main h4 {
+    display: block;
+    text-align: center;
+}
+
+main h3 {
+    font-family: "Merienda";
+    font-size: 1.5625rem;
+}
+
+main h4 {
+    font-family: "Merienda";
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+}
+
+main .float img {
+    float: right;
+    margin-left: 2rem;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+main article:nth-of-type(1) {
+    margin-bottom: 3rem;
+}
+
+/* ***********************MENU*************************** */
+/* ************IMAGES MENU********************* */
+
+main article:nth-of-type(2) section img:nth-child(2) {
+    width: 100%;
+}
+
+main .flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+main article:nth-of-type(2) div a {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-inline: 1rem;
+}
+
+main article:nth-of-type(2) div a img {
+    padding: 0;
+    margin: 0;
+}
+
+main article {
+    margin-block: 2rem;
+}
+
+main article:nth-of-type(2) h3 {
+    display: block;
+}
+
+main article:nth-of-type(2) li::before {
+    font-family: "font awesome 5 free";
+    content: "\f005";
+    color: var(--clr-third);
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
+}
+
+main article:nth-of-type(2) li {
+    list-style-type: none;
+    border-bottom: 1px dotted #444444;
+    padding-block: 0.5rem;
+}
+
+main article:nth-of-type(2) li:nth-of-type(5) {
+    margin-bottom: 1rem;
+}
+
+main article:nth-of-type(2) ul {
+    padding: 0;
+    margin: 0;
+}
+
+main article:nth-of-type(2) section {
+    background-color: var(--clr-secondary);
+    padding-bottom: 1.5rem;
+}
+
+.border {
+    border: #fff 3px solid;
+    padding: 3rem;
+    margin-inline: 0.5rem;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    left: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.border p {
+    font-size: 1rem;
+    font-family: "Athiti";
+    margin: 0;
+    padding: 0;
+}
+
+/**************LES HOVERS*************/
+/************PARAMETRAGE**********************/
+main .hovers {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background-color: rgba(76, 67, 67, .9);
+}
+
+.border>p:nth-child(1) {
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+
+.flex ul li {
+    font-size: 0.9375rem;
+    font-family: "Athiti";
+}
+
+/************HOVER*************/
+main section .hovers:hover .text {
+    opacity: 3;
+}
+
+main section .hovers:hover>img {
+    opacity: .3;
+}
+
+main section .hovers:hover .border {
+    opacity: 1;
+}
+
+main section .hovers:hover img {
+    opacity: .3;
+}
+
+video {
+    max-width: 70%;
+    margin-inline: 15%;
+}
+
+.item {
+    margin-inline: 5px;
+}
+
+.item {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+
+/* ***********PAGE ABOUT*********/
+.dining_room {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+    padding-top: 1.5rem;
+    background-color: var(--clr-secondary);
+}
+
+.dining_room img:hover {
+    transform: scale(1.02);
+}
+
+.dining_room img {
+    transition: all 3s;
+}
+
+.justify p {
+    text-align: justify;
+}
+
+.dining_room {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* *********MENUS PAGE********** */
+.mixi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+    padding-top: 1.5rem;
+    background-color: var(--clr-secondary);
+    margin-block: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.mixi img {
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .3);
+
+}
+
+.mix img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+button {
+    font-family: "Athiti";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--clr-secondary);
+    transition: all 2s;
+    border: none;
+}
+
+button:active,
+button:hover,
+button:focus {
+    background-color: var(--clr-third);
+    color: var(--clr-fifth);
+}
+
+.dessert,
+.cocktails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: var(--clr-secondary);
+    padding: 2rem;
+}
+
+.dessert img,
+.cocktails img {
+    box-shadow: 0px 3px 2px 2px rgba(76, 67, 67, .9);
+    transition: all 2s ease;
+}
+
+.dessert img:hover,
+.cocktails img:hover {
+    transform: scale(1.03);
+}
+
+/* *******HOVER DES IMAGES DE LA CLASSE MIXI*********** */
+main .survoles {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background-color: rgba(76, 67, 67, .9);
+}
+
+.text {
+    border: #fff 3px solid;
+    padding: 3rem;
+    margin-inline: 0.5rem;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    left: 2rem;
+    top: 2rem;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.text img {
+    width: 50px;
+}
+
+.text>p {
+    font-size: 1rem;
+    font-family: "Merienda";
+}
+
+main section .survoles:hover .text {
+    opacity: 1;
+}
+
+main section .survoles:hover>img {
+    opacity: .3;
+}
+
+/*****************************************CONTACT US**************************************/
+/* *********************MISE EN FORME DU FORMULAIRE************************* */
+#head_color {
+    background-image: linear-gradient(to top, var(--clr-fifth), var(--clr-secondary));
+    margin-bottom: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.formulaire {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+form {
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    background-color: var(--clr-secondary);
+    margin-inline: auto;
+    max-width: 70%;
+}
+
+.formulaire>fieldset {
+    width: 50%;
+}
+
+.formulaire>fieldset input {
+    width: 100%;
+}
+
+form>fieldset:nth-child(2) {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+label {
+    display: flex;
+    padding-inline: 0.5rem;
+    font-family: "Athiti";
+    font-weight: 500;
+    position: relative;
+    left: -1rem;
+}
+
+.wrap {
+    margin-top: 0.5rem;
+    padding-block: 0.5rem;
+}
+
+legend {
+    text-align: justify;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    font-family: "Merienda";
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* *************************IMPORTANCE DES INPUTS A REMPLIR **************************/
+span:not(main section>p span) {
+    color: var(--clr-third);
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: -0.3rem;
+    margin-right: 0.5rem;
+    border-bottom: 1px dotted var(--clr-third);
+}
+
+main section>p span {
+    color: var(--clr-third);
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px dotted var(--clr-third);
+    padding-bottom: 0.3rem;
+}
+
+/* ********************PARAMETRAGE DES INPUTS ********************/
+form>.input {
+    background-color: var(--clr-primary);
+    color: var(--clr-fifth);
+    font-family: "Athiti";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: block;
+    z-index: 3;
+    margin-inline: auto;
+    width: 50%;
+}
+
+.input,
+textarea,
+input {
+    border-radius: 5px;
+}
+
+input {
+    max-width: 100%;
+    padding-block: 0.5rem;
+}
+
+/*******************************************FOOTER************************************ */
+.footer-bg {
+    background: url(../ressources/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1rem;
+    color: var(--clr-fifth);
+}
+
+.footer-bg h3 {
+    border-bottom: 1px dotted var(--clr-fifth);
+    display: block;
+    padding-inline: 4rem;
+    padding-block: -3rem;
+    font-family: "Merienda";
+    font-size: 1.125rem;
+}
+
+.footer-bg address {
+    line-height: 4px;
+}
+
+.footer-bg li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-bg a {
+    text-decoration: none;
+    color: var(--clr-fifth);
+}
+
+.footer-bg section:nth-of-type(3) a {
+    padding: 1rem;
+    transition: all .5s;
+}
+
+.footer-bg section:nth-of-type(3) a:hover {
+    color: chartreuse;
+    transform: scale(1.5);
+}
+
+footer .footer-bg {
+    display: flex;
+    text-align: center;
+}
+
+footer div:nth-child(2) {
+    background-color: var(--clr-fourth);
+    text-align: center;
+    color: #fff;
+}
+
+footer div:nth-child(2) a {
+    color: #fff;
+    padding: 0;
+}
